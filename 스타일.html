@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style</title>
+
+    <style>
+
+        div{
+            width: 200px;
+            height: 200px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        h1{
+            width: 400px;
+            height: 50px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: #000000;
+        }
+
+        .box{
+            border-color: red;
+        }  
+
+        #box_2{
+            border-style: dotted;
+        }
+             /* =>코드상 제일 마지막에 적히는 코드가 우선순위가 가장 높음
+              =>우선순위 : 태그 < 클래스 < 아이디 */
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box"></div>
+    <div class="box" id="box_2"></div>
+    <div class="box"> </div>
+    <h1 class="box" align="center">Hello</h1>
+
+    <!-- 1.스타일 적용 하는방법
+    =>선택을 하고 명령을 내린다
+    선택자( 속성:속성값;)
+    
+    2.선택자
+    
+    =>태그선택자
+    -내문서 내에 있는 동일태그를 선택할때
+   
+    =>클래스 선택자
+    -태그의 옵션으로 지정하기
+    -반복 사용 가능
+    -여러개 설정 가능, 앞에는 .이 붙음
+    
+    =>아이디선택자
+    -태그의 옵션으로 지정하기
+    -우선순위가 가장 높음
+    -반복사용 불가
+    -바디안에서 단 하나만 설정 가능, 앞에는 #이 붙음
+
+    *클래스, 아이디 선택자 명 삽입시 규칙
+    1.첫번째 글자는 무조건 영어
+    2.빈공백 인식안함
+    3.특수문자 (_),(-) 만 사용가능
+    4.두단어 연결시_,-사용 또는 두번째 단어의 첫번째 글자를 대문자로 삽입 -->
+
+</body>
+</html>
